@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63461943659f66b4a943914a7609a0b8, type: 3}
+  m_Name: Tutorial 7
+  m_EditorClassIdentifier: 
+  tutorial:
+    metin: "Vezir yatay, dikey ve \xE7apraz yollar boyunca hareket edebilir.\n"
+    tutorialSeviye: 9
+    tutorialObje: {fileID: 3557259463732542091, guid: b4d184cd0ea2ddf4fb83799fea4e3783, type: 3}

@@ -1,0 +1,165 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b2bbccb287f88140a01f79f2815ec37, type: 3}
+  m_Name: Seviye 11
+  m_EditorClassIdentifier: 
+  en: 8
+  boy: 8
+  fayansYerlesim:
+  - x: 0
+    y: 0
+    fayTur: 0
+  - x: 0
+    y: 1
+    fayTur: 0
+  - x: 0
+    y: 2
+    fayTur: 0
+  - x: 1
+    y: 2
+    fayTur: 0
+  - x: 1
+    y: 1
+    fayTur: 0
+  - x: 1
+    y: 0
+    fayTur: 0
+  - x: 2
+    y: 0
+    fayTur: 0
+  - x: 2
+    y: 1
+    fayTur: 0
+  - x: 2
+    y: 2
+    fayTur: 0
+  - x: 3
+    y: 2
+    fayTur: 0
+  - x: 3
+    y: 1
+    fayTur: 0
+  - x: 3
+    y: 0
+    fayTur: 0
+  - x: 4
+    y: 0
+    fayTur: 0
+  - x: 4
+    y: 1
+    fayTur: 0
+  - x: 4
+    y: 2
+    fayTur: 0
+  - x: 5
+    y: 2
+    fayTur: 0
+  - x: 5
+    y: 1
+    fayTur: 0
+  - x: 5
+    y: 0
+    fayTur: 0
+  - x: 6
+    y: 0
+    fayTur: 0
+  - x: 6
+    y: 1
+    fayTur: 0
+  - x: 6
+    y: 2
+    fayTur: 0
+  - x: 7
+    y: 2
+    fayTur: 0
+  - x: 7
+    y: 1
+    fayTur: 0
+  - x: 7
+    y: 0
+    fayTur: 0
+  - x: 7
+    y: 3
+    fayTur: 2
+  - x: 7
+    y: 4
+    fayTur: 2
+  - x: 6
+    y: 4
+    fayTur: 2
+  - x: 6
+    y: 3
+    fayTur: 2
+  - x: 5
+    y: 3
+    fayTur: 2
+  - x: 5
+    y: 4
+    fayTur: 2
+  - x: 4
+    y: 4
+    fayTur: 2
+  - x: 4
+    y: 3
+    fayTur: 2
+  - x: 3
+    y: 3
+    fayTur: 2
+  - x: 3
+    y: 4
+    fayTur: 2
+  - x: 2
+    y: 4
+    fayTur: 2
+  - x: 2
+    y: 3
+    fayTur: 2
+  - x: 1
+    y: 3
+    fayTur: 2
+  - x: 1
+    y: 4
+    fayTur: 2
+  - x: 0
+    y: 4
+    fayTur: 2
+  - x: 0
+    y: 3
+    fayTur: 2
+  taslar:
+  - {fileID: 1235546574989150725, guid: 8326596ce3901074a941910e9e2a198b, type: 3}
+  - {fileID: 57559339306428642, guid: fd57a08d71e9ab846a665dc2d8ed85dc, type: 3}
+  - {fileID: 1235546574989150725, guid: 4bba469a9f7abda42ad0db0360070f14, type: 3}
+  - {fileID: 1235546574989150725, guid: eccefb1c4c361ea4b829d53eb3388dbe, type: 3}
+  - {fileID: 990030861358947478, guid: bafd1fd56342bbb48843cf25188bdbce, type: 3}
+  - {fileID: 1737825543682142813, guid: 137c82af701b9b941a7f6976ef4931ad, type: 3}
+  oyunSonuKosulu:
+    kosulTuru: 0
+    sayacDegeri: 30
+  seviyeHedefleri:
+  - gerekenMiktar: 16
+    toplananMiktar: 16
+    hedefResmi: {fileID: 21300000, guid: 3216ee8a2e651984890a8021366b3983, type: 3}
+    hedefResimRengi: {r: 0.43529412, g: 0.43529412, b: 0.43529412, a: 1}
+    eslesenTasTuru: 6
+    eslesenTasRengi: 7
+    eslenenFayansTuru: 2
+    Tiklanan2Mi: 0
+  - gerekenMiktar: 24
+    toplananMiktar: 24
+    hedefResmi: {fileID: 21300000, guid: cbb5f21bcd12f284da56286d43e6ffab, type: 3}
+    hedefResimRengi: {r: 1, g: 1, b: 1, a: 1}
+    eslesenTasTuru: 6
+    eslesenTasRengi: 7
+    eslenenFayansTuru: 0
+    Tiklanan2Mi: 0
+  turEslesmesiOlacakMi: 0

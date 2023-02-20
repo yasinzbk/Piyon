@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b2bbccb287f88140a01f79f2815ec37, type: 3}
+  m_Name: Seviye 8
+  m_EditorClassIdentifier: 
+  en: 9
+  boy: 9
+  fayansYerlesim:
+  - x: 4
+    y: 4
+    fayTur: 2
+  - x: 3
+    y: 4
+    fayTur: 1
+  - x: 4
+    y: 5
+    fayTur: 1
+  - x: 4
+    y: 3
+    fayTur: 1
+  - x: 3
+    y: 3
+    fayTur: 1
+  - x: 3
+    y: 5
+    fayTur: 1
+  - x: 5
+    y: 3
+    fayTur: 1
+  - x: 5
+    y: 4
+    fayTur: 1
+  - x: 5
+    y: 5
+    fayTur: 1
+  taslar:
+  - {fileID: 599368502288371011, guid: ea1ecb87794a65747b6613313e012796, type: 3}
+  - {fileID: 2326225004333326446, guid: 7accfb40aa567f64db22fff899012449, type: 3}
+  - {fileID: 599368502288371011, guid: f2b26b77ff13ad74ebd682530249a8cb, type: 3}
+  - {fileID: 3879441411620042485, guid: 572f17d62627f5a4dab0c88cfe6a9dd2, type: 3}
+  - {fileID: 4827854961698746471, guid: 5a23b195964419e41943b68d3d3c1713, type: 3}
+  - {fileID: 599368502288371011, guid: 5406b359e11f18c49b7290f09cae45f0, type: 3}
+  oyunSonuKosulu:
+    kosulTuru: 0
+    sayacDegeri: 15
+  seviyeHedefleri:
+  - gerekenMiktar: 1
+    toplananMiktar: 0
+    hedefResmi: {fileID: 21300000, guid: 3216ee8a2e651984890a8021366b3983, type: 3}
+    hedefResimRengi: {r: 0.43529412, g: 0.43529412, b: 0.43529412, a: 1}
+    eslesenTasTuru: 6
+    eslesenTasRengi: 7
+    eslenenFayansTuru: 2
+    Tiklanan2Mi: 0
+  turEslesmesiOlacakMi: 0

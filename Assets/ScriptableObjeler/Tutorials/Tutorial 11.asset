@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63461943659f66b4a943914a7609a0b8, type: 3}
+  m_Name: Tutorial 11
+  m_EditorClassIdentifier: 
+  tutorial:
+    metin: "Sarma\u015F\u0131klar her turda \xE7o\u011Fal\u0131r. Onlar\u0131 yok
+      et!"
+    tutorialSeviye: 16
+    tutorialObje: {fileID: 8873902553410643272, guid: 8dafa540745780e479724ec0e837c847, type: 3}

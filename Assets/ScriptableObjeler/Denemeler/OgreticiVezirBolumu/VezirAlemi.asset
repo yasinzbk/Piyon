@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51e10ea60a396c94aa3c2e871f892ed4, type: 3}
+  m_Name: VezirAlemi
+  m_EditorClassIdentifier: 
+  seviyeler:
+  - {fileID: 11400000, guid: a096e62c5ef532e42a3a361b93b3a98b, type: 2}
+  - {fileID: 11400000, guid: 43873b5c873141d4bb560b1d0d267418, type: 2}
+  - {fileID: 11400000, guid: b1f4558bad4187247b430b9a61d0462c, type: 2}
+  - {fileID: 11400000, guid: 2346bbbefd05cb94a9e35db973f69fdb, type: 2}
+  - {fileID: 11400000, guid: 03f8f05391f695646afd2c853c8238ce, type: 2}
+  - {fileID: 11400000, guid: 0394a93b2c0238f47b64f7a35fa8fcd7, type: 2}
+  - {fileID: 11400000, guid: d21efed7c0649ec44953aa399b4fe79f, type: 2}
+  - {fileID: 11400000, guid: c2601b8b98a1a95499213f785c74baed, type: 2}
+  - {fileID: 11400000, guid: f4d186cc3ebb5f94a83326ebff22cd4e, type: 2}

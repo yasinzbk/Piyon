@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b2bbccb287f88140a01f79f2815ec37, type: 3}
+  m_Name: Seviye 1
+  m_EditorClassIdentifier: 
+  en: 5
+  boy: 5
+  fayansYerlesim: []
+  taslar:
+  - {fileID: 4111227930515785821, guid: 4ad32f64e1ba37a45a0095e4e1f6d209, type: 3}
+  - {fileID: 2112357160503797129, guid: 6c435e9b8800fb64cb53e92fd25365d2, type: 3}
+  - {fileID: 7330550158249639265, guid: 7765735a2fe9bf4428d728b152288bef, type: 3}
+  - {fileID: 3406424761235256456, guid: 66cb3171febe16c40aae4e3649541fa1, type: 3}
+  oyunSonuKosulu:
+    kosulTuru: 0
+    sayacDegeri: 20
+  seviyeHedefleri:
+  - gerekenMiktar: 15
+    toplananMiktar: 0
+    hedefResmi: {fileID: 1460837293, guid: ba4f285c54eda834c87a3c4955da9493, type: 3}
+    hedefResimRengi: {r: 0, g: 0.6431373, b: 0.93725497, a: 1}
+    eslesenTasTuru: 0
+    eslesenTasRengi: 1
+    eslenenFayansTuru: 6
+    Tiklanan2Mi: 0
+  turEslesmesiOlacakMi: 0

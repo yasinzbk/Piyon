@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63461943659f66b4a943914a7609a0b8, type: 3}
+  m_Name: Tutorial 10
+  m_EditorClassIdentifier: 
+  tutorial:
+    metin: "Art\u0131k t\xFCm ta\u015F t\xFCrleri aktif. \nDikkat et! \nArt\u0131k
+      ta\u015Flar\u0131 t\xFCrlerine g\xF6re de e\u015Fleyebilirsin."
+    tutorialSeviye: 12
+    tutorialObje: {fileID: 3482854669420374170, guid: 1d21749a55b3fb04fb663e78948c6608, type: 3}

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51e10ea60a396c94aa3c2e871f892ed4, type: 3}
+  m_Name: FilAlemi
+  m_EditorClassIdentifier: 
+  seviyeler:
+  - {fileID: 11400000, guid: afb50bf634ac91d478d1bd251313d182, type: 2}
+  - {fileID: 11400000, guid: dbcc95c6fa7ebeb4885e474bc27c0e7f, type: 2}
+  - {fileID: 11400000, guid: ea5284b445172b04284a782586b04415, type: 2}
+  - {fileID: 11400000, guid: 77ea7fc4b707c4a47a7759d8413f108c, type: 2}
+  - {fileID: 11400000, guid: 50079e07428bf91418bfd690f9779c22, type: 2}
+  - {fileID: 11400000, guid: f545673e71e926d43959b5339437a189, type: 2}
+  - {fileID: 11400000, guid: 1c5d8e23ee7d56146a9d5f63568975c4, type: 2}
+  - {fileID: 11400000, guid: 5cdb7e94f6a505e41ad1a1d1a50f69eb, type: 2}
+  - {fileID: 11400000, guid: 7c852be1c8b173043929f03990bd462f, type: 2}

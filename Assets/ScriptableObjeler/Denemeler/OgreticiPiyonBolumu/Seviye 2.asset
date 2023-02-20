@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b2bbccb287f88140a01f79f2815ec37, type: 3}
+  m_Name: Seviye 2
+  m_EditorClassIdentifier: 
+  en: 6
+  boy: 8
+  fayansYerlesim:
+  - x: 0
+    y: 1
+    fayTur: 3
+  - x: 0
+    y: 2
+    fayTur: 3
+  - x: 0
+    y: 3
+    fayTur: 3
+  - x: 0
+    y: 4
+    fayTur: 3
+  - x: 1
+    y: 0
+    fayTur: 3
+  - x: 1
+    y: 1
+    fayTur: 3
+  - x: 1
+    y: 2
+    fayTur: 3
+  - x: 1
+    y: 3
+    fayTur: 3
+  - x: 1
+    y: 4
+    fayTur: 3
+  - x: 2
+    y: 0
+    fayTur: 3
+  - x: 2
+    y: 1
+    fayTur: 3
+  - x: 2
+    y: 2
+    fayTur: 3
+  - x: 2
+    y: 3
+    fayTur: 3
+  - x: 2
+    y: 4
+    fayTur: 3
+  - x: 3
+    y: 0
+    fayTur: 3
+  - x: 3
+    y: 1
+    fayTur: 3
+  - x: 3
+    y: 2
+    fayTur: 3
+  - x: 3
+    y: 3
+    fayTur: 3
+  - x: 3
+    y: 4
+    fayTur: 3
+  - x: 4
+    y: 0
+    fayTur: 3
+  - x: 4
+    y: 1
+    fayTur: 3
+  - x: 4
+    y: 2
+    fayTur: 3
+  - x: 4
+    y: 3
+    fayTur: 3
+  - x: 4
+    y: 4
+    fayTur: 3
+  - x: 5
+    y: 1
+    fayTur: 3
+  - x: 5
+    y: 2
+    fayTur: 3
+  - x: 5
+    y: 3
+    fayTur: 3
+  - x: 5
+    y: 4
+    fayTur: 3
+  taslar:
+  - {fileID: 4111227930515785821, guid: 4ad32f64e1ba37a45a0095e4e1f6d209, type: 3}
+  - {fileID: 2112357160503797129, guid: 6c435e9b8800fb64cb53e92fd25365d2, type: 3}
+  - {fileID: 7330550158249639265, guid: 7765735a2fe9bf4428d728b152288bef, type: 3}
+  - {fileID: 3406424761235256456, guid: 66cb3171febe16c40aae4e3649541fa1, type: 3}
+  oyunSonuKosulu:
+    kosulTuru: 0
+    sayacDegeri: 22
+  seviyeHedefleri:
+  - gerekenMiktar: 28
+    toplananMiktar: 28
+    hedefResmi: {fileID: 21300000, guid: cbb5f21bcd12f284da56286d43e6ffab, type: 3}
+    hedefResimRengi: {r: 1, g: 1, b: 1, a: 1}
+    eslesenTasTuru: 6
+    eslesenTasRengi: 6
+    eslenenFayansTuru: 3
+  turEslesmesiOlacakMi: 0

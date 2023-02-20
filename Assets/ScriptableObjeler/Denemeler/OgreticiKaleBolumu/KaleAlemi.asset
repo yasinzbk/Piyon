@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51e10ea60a396c94aa3c2e871f892ed4, type: 3}
+  m_Name: KaleAlemi
+  m_EditorClassIdentifier: 
+  seviyeler:
+  - {fileID: 11400000, guid: 6d818c48745297148b340ca92c084785, type: 2}
+  - {fileID: 11400000, guid: 629c6a9fb5808c04d88028dad884dd4a, type: 2}
+  - {fileID: 11400000, guid: f35b390e65eeb85499d364e71de6b752, type: 2}
+  - {fileID: 11400000, guid: 9e51c02b68376e54da632834507efd7b, type: 2}
+  - {fileID: 11400000, guid: b8e2ea6f9bbc61a4e98f15bb36ab360f, type: 2}
+  - {fileID: 11400000, guid: 9fa62bb9fa87fbb49a48a9bd284d17d3, type: 2}
+  - {fileID: 11400000, guid: 1a7d57e64209ab34ea6b8f736e06d091, type: 2}
+  - {fileID: 11400000, guid: cf00dfd03e31bb440aadb296eeba15d0, type: 2}
+  - {fileID: 11400000, guid: 027dd1bff20ed734f9d6410bf2337b6a, type: 2}

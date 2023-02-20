@@ -1,0 +1,722 @@
+fileFormatVersion: 2
+guid: b18d894c5499bb74ba8b1fafae1cd891
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4361848484145299650
+    second: satrancCras_0
+  - first:
+      213: -6337959617495260597
+    second: satrancCras_1
+  - first:
+      213: 1755609982992645183
+    second: satrancCras_2
+  - first:
+      213: 80288304469702347
+    second: satrancCras_3
+  - first:
+      213: -4902267827843005580
+    second: satrancCras_4
+  - first:
+      213: -6538585542027259360
+    second: satrancCras_5
+  - first:
+      213: 7348224915092665021
+    second: satrancCras_6
+  - first:
+      213: 7691259227573747752
+    second: satrancCras_7
+  - first:
+      213: 2256156587855452571
+    second: satrancCras_8
+  - first:
+      213: 2405696023371966892
+    second: satrancCras_9
+  - first:
+      213: -5948999267335419026
+    second: satrancCras_10
+  - first:
+      213: 3321997056496361878
+    second: satrancCras_11
+  - first:
+      213: 2086048936236615059
+    second: satrancCras_12
+  - first:
+      213: -6716400300645458241
+    second: satrancCras_13
+  - first:
+      213: 6472609069180192279
+    second: satrancCras_14
+  - first:
+      213: 7946859016586174288
+    second: satrancCras_15
+  - first:
+      213: -1564807654608413105
+    second: satrancCras_16
+  - first:
+      213: 72019247986917874
+    second: satrancCras_17
+  - first:
+      213: -3149588618788081461
+    second: satrancCras_18
+  - first:
+      213: 4472896709592987513
+    second: satrancCras_19
+  - first:
+      213: -6067304165141073514
+    second: satrancCras_20
+  - first:
+      213: 1499654691883783131
+    second: satrancCras_21
+  - first:
+      213: -214154816039458176
+    second: satrancCras_22
+  - first:
+      213: -7538999733823537910
+    second: satrancCras_23
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: satrancCras_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 967
+        width: 79
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3f717ae9e99773c0800000000000000
+      internalID: -4361848484145299650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satrancCras_1
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 967
+        width: 90
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b42ac6ece4b0b08a0800000000000000
+      internalID: -6337959617495260597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satrancCras_2
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 967
+        width: 65
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3cf7685afd2d5810800000000000000
+      internalID: 1755609982992645183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satrancCras_3
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 964
+        width: 84
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc6f88b99cd3d1100800000000000000
+      internalID: 80288304469702347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satrancCras_4
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 967
+        width: 78
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47387974265a7fbb0800000000000000
+      internalID: -4902267827843005580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satrancCras_5
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 967
+        width: 56
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 022d5f9a7174245a0800000000000000
+      internalID: -6538585542027259360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satrancCras_6
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 824
+        width: 79
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db2f5c1b0a32af560800000000000000
+      internalID: 7348224915092665021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satrancCras_7
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 824
+        width: 91
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8208af67487dcba60800000000000000
+      internalID: 7691259227573747752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satrancCras_8
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 824
+        width: 66
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9918c8867a7f4f10800000000000000
+      internalID: 2256156587855452571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satrancCras_9
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 822
+        width: 84
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca9e7ae89cfb26120800000000000000
+      internalID: 2405696023371966892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satrancCras_10
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 824
+        width: 78
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6bc96d7fa8e07da0800000000000000
+      internalID: -5948999267335419026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satrancCras_11
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 824
+        width: 56
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 691eb51e8ba1a1e20800000000000000
+      internalID: 3321997056496361878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satrancCras_12
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 680
+        width: 79
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3950774847223fc10800000000000000
+      internalID: 2086048936236615059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satrancCras_13
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 680
+        width: 90
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbe53b6f28d8ac2a0800000000000000
+      internalID: -6716400300645458241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satrancCras_14
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 680
+        width: 65
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7160572b7a353d950800000000000000
+      internalID: 6472609069180192279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satrancCras_15
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 677
+        width: 84
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05f9abbdb2ae84e60800000000000000
+      internalID: 7946859016586174288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satrancCras_16
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 680
+        width: 78
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4ed0459abfa84ae0800000000000000
+      internalID: -1564807654608413105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satrancCras_17
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 680
+        width: 56
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f1404ddf1ddff000800000000000000
+      internalID: 72019247986917874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satrancCras_18
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 537
+        width: 79
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc0f584a6d96a44d0800000000000000
+      internalID: -3149588618788081461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satrancCras_19
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 537
+        width: 91
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 977bd44ebdbe21e30800000000000000
+      internalID: 4472896709592987513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satrancCras_20
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 537
+        width: 66
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 691b48cf10b9ccba0800000000000000
+      internalID: -6067304165141073514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satrancCras_21
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 535
+        width: 84
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd31b7b2ff7dfc410800000000000000
+      internalID: 1499654691883783131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satrancCras_22
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 537
+        width: 78
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08a6707545b270df0800000000000000
+      internalID: -214154816039458176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satrancCras_23
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 537
+        width: 56
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0dfea77fa7106790800000000000000
+      internalID: -7538999733823537910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      satrancCras_12: 2086048936236615059
+      satrancCras_15: 7946859016586174288
+      satrancCras_20: -6067304165141073514
+      satrancCras_22: -214154816039458176
+      satrancCras_21: 1499654691883783131
+      satrancCras_6: 7348224915092665021
+      satrancCras_14: 6472609069180192279
+      satrancCras_18: -3149588618788081461
+      satrancCras_23: -7538999733823537910
+      satrancCras_2: 1755609982992645183
+      satrancCras_10: -5948999267335419026
+      satrancCras_11: 3321997056496361878
+      satrancCras_8: 2256156587855452571
+      satrancCras_9: 2405696023371966892
+      satrancCras_5: -6538585542027259360
+      satrancCras_13: -6716400300645458241
+      satrancCras_1: -6337959617495260597
+      satrancCras_16: -1564807654608413105
+      satrancCras_4: -4902267827843005580
+      satrancCras_17: 72019247986917874
+      satrancCras_3: 80288304469702347
+      satrancCras_0: -4361848484145299650
+      satrancCras_19: 4472896709592987513
+      satrancCras_7: 7691259227573747752
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
