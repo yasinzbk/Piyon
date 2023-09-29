@@ -46,7 +46,7 @@ public class M3Tas : MonoBehaviour
     public GameObject renkBombasi;
     public GameObject bitisikBombasi;
 
-    public GameObject debugObje;
+    //public GameObject debugObje;
 
     private void Awake()
     {
@@ -67,59 +67,87 @@ public class M3Tas : MonoBehaviour
         turEslesmesiOlacak = tahta.turEslesmesiOlacakMi;
         tahta.hedefYoneticisi.TasiLanetle(this);
 
-        RenkKontrolDEBUG();
+        //RenkKontrolDEBUG();
     }
 
 
     void Update()
     {
-        RenkKontrolDEBUG();
-        if (!tasToplansinMi)
-        {
-        hedefX = sutun;
-        hedefY = satir;
+        //RenkKontrolDEBUG();
 
-        if (Mathf.Abs(hedefX - transform.position.x) > .1)
+        //if (!tasToplansinMi)
+        //{
+        //hedefX = sutun;
+        //hedefY = satir;
+
+        //if (Mathf.Abs(hedefX - transform.position.x) > .1)
+        //{
+        //    //hedefe git
+        //    geciciPozisyon = new Vector2(hedefX, transform.position.y);
+        //    transform.position = Vector2.Lerp(transform.position, geciciPozisyon, .2f);
+        //    if (tahta.tumTaslar[sutun, satir] != this.gameObject)
+        //    {
+        //        tahta.tumTaslar[sutun, satir] = this.gameObject;
+        //        eslesmeBulucu.TumEslestirmeleriBul();
+        //            RenkKontrolDEBUG(); // Hata Kontrol Fonk
+        //    }
+
+
+        //}
+        //else
+        //{
+        //    geciciPozisyon = new Vector2(hedefX, transform.position.y);
+        //    transform.position = geciciPozisyon;
+
+        //}
+        //if (Mathf.Abs(hedefY - transform.position.y) > .1)
+        //{
+        //    //hedefe git
+        //    geciciPozisyon = new Vector2(transform.position.x, hedefY);
+        //    transform.position = Vector2.Lerp(transform.position, geciciPozisyon, .2f);
+        //    if (tahta.tumTaslar[sutun, satir] != this.gameObject)
+        //    {
+        //        tahta.tumTaslar[sutun, satir] = this.gameObject;
+        //       eslesmeBulucu.TumEslestirmeleriBul();
+        //            RenkKontrolDEBUG(); // Hata kontrol Fonk
+        //    }
+
+
+        //}
+        //else
+        //{
+        //    geciciPozisyon = new Vector2(transform.position.x, hedefY);
+        //    transform.position = geciciPozisyon;
+
+        //}
+
+        //}
+
+        if (!tasToplansinMi)   // Bu kodu sadelestirdim babamin buldugu hatayı duzeltebilir, bana mantikli geldi
         {
-            //hedefe git
-            geciciPozisyon = new Vector2(hedefX, transform.position.y);
-            transform.position = Vector2.Lerp(transform.position, geciciPozisyon, .2f);
-            if (tahta.tumTaslar[sutun, satir] != this.gameObject)
+            hedefX = sutun;
+            hedefY = satir;
+
+            if (Mathf.Abs(hedefX - transform.position.x) > .1 || Mathf.Abs(hedefY - transform.position.y) > .1)
             {
-                tahta.tumTaslar[sutun, satir] = this.gameObject;
-                eslesmeBulucu.TumEslestirmeleriBul();
-                    RenkKontrolDEBUG(); // Hata Kontrol Fonk
+                //hedefe git
+                geciciPozisyon = new Vector2(hedefX, hedefY);
+                transform.position = Vector2.Lerp(transform.position, geciciPozisyon, .2f);
+                if (tahta.tumTaslar[sutun, satir] != this.gameObject)
+                {
+                    tahta.tumTaslar[sutun, satir] = this.gameObject;
+                    eslesmeBulucu.TumEslestirmeleriBul();
+                    //RenkKontrolDEBUG(); // Hata Kontrol Fonk
+                }
+
+
             }
-
-
-        }
-        else
-        {
-            geciciPozisyon = new Vector2(hedefX, transform.position.y);
-            transform.position = geciciPozisyon;
-
-        }
-        if (Mathf.Abs(hedefY - transform.position.y) > .1)
-        {
-            //hedefe git
-            geciciPozisyon = new Vector2(transform.position.x, hedefY);
-            transform.position = Vector2.Lerp(transform.position, geciciPozisyon, .2f);
-            if (tahta.tumTaslar[sutun, satir] != this.gameObject)
+            else
             {
-                tahta.tumTaslar[sutun, satir] = this.gameObject;
-               eslesmeBulucu.TumEslestirmeleriBul();
-                    RenkKontrolDEBUG(); // Hata kontrol Fonk
+                geciciPozisyon = new Vector2(hedefX,hedefY);
+                transform.position = geciciPozisyon;
+
             }
-
-
-        }
-        else
-        {
-            geciciPozisyon = new Vector2(transform.position.x, hedefY);
-            transform.position = geciciPozisyon;
-
-        }
-
         }
 
         if (tasToplansinMi)
@@ -173,36 +201,36 @@ public class M3Tas : MonoBehaviour
         }
     }
 
-    public void RenkKontrolDEBUG()
-    {
-        if (tasinRengi == TasRengi.Kirmizi)
-        {
-            debugObje.GetComponent<SpriteRenderer>().color = Color.red;
-        }else if (tasinRengi == TasRengi.Mavi)
-        {
-            debugObje.GetComponent<SpriteRenderer>().color = Color.blue;
-        }
-        else if (tasinRengi == TasRengi.Sari)
-        {
-            debugObje.GetComponent<SpriteRenderer>().color = Color.yellow;
-        }
-        else if (tasinRengi == TasRengi.Pembe)
-        {
-            debugObje.GetComponent<SpriteRenderer>().color = Color.magenta;
-        }
-        else if (tasinRengi == TasRengi.Yesil)
-        {
-            debugObje.GetComponent<SpriteRenderer>().color = Color.green;
-        }
-        else if (tasinRengi == TasRengi.Beyaz)
-        {
-            debugObje.GetComponent<SpriteRenderer>().color = Color.black;
-        }
-        else
-        {
-            debugObje.GetComponent<SpriteRenderer>().color = Color.clear; //gorunmez yapıyor
-        }
-    }
+    //public void RenkKontrolDEBUG()
+    //{
+    //    if (tasinRengi == TasRengi.Kirmizi)
+    //    {
+    //        debugObje.GetComponent<SpriteRenderer>().color = Color.red;
+    //    }else if (tasinRengi == TasRengi.Mavi)
+    //    {
+    //        debugObje.GetComponent<SpriteRenderer>().color = Color.blue;
+    //    }
+    //    else if (tasinRengi == TasRengi.Sari)
+    //    {
+    //        debugObje.GetComponent<SpriteRenderer>().color = Color.yellow;
+    //    }
+    //    else if (tasinRengi == TasRengi.Pembe)
+    //    {
+    //        debugObje.GetComponent<SpriteRenderer>().color = Color.magenta;
+    //    }
+    //    else if (tasinRengi == TasRengi.Yesil)
+    //    {
+    //        debugObje.GetComponent<SpriteRenderer>().color = Color.green;
+    //    }
+    //    else if (tasinRengi == TasRengi.Beyaz)
+    //    {
+    //        debugObje.GetComponent<SpriteRenderer>().color = Color.black;
+    //    }
+    //    else
+    //    {
+    //        debugObje.GetComponent<SpriteRenderer>().color = Color.clear; //gorunmez yapıyor
+    //    }
+    //}
 
     public bool EslesmeKontrol(M3Tas x, M3Tas y)
     {
