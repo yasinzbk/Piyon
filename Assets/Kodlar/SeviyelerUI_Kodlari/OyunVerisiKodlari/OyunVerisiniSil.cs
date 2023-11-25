@@ -8,31 +8,25 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 public class OyunVerisiniSil : MonoBehaviour
 {
-    private OyunVerisi oyunverisi;
 
     public GameObject veriSilPaneli;
 
-    private void Start()
-    {
-        oyunverisi = FindObjectOfType<OyunVerisi>();
-
-    }
-
-
-
-
     public void KayitVerisiniSil()
     {
-       oyunverisi.veriKaydet = new VeriKaydet();
-        //oyunverisi.veriKaydet.aktifMi = new bool[100, 10];
-        oyunverisi.veriKaydet.aktifMi = new bool[2, 100];
+        //oyunverisi.veriKaydet = new VeriKaydet();
+        // //oyunverisi.veriKaydet.aktifMi = new bool[100, 10];
+        // oyunverisi.veriKaydet.aktifMi = new bool[2, 100];
 
-        for (int i = 0; i < oyunverisi.veriKaydet.aktifMi.GetLength(0); i++)
-        {
-            oyunverisi.veriKaydet.aktifMi[i, 0] = true;
-        }
+        // for (int i = 0; i < oyunverisi.veriKaydet.aktifMi.GetLength(0); i++)
+        // {
+        //     oyunverisi.veriKaydet.aktifMi[i, 0] = true;
+        // }
 
-        oyunverisi.veriKaydet.oyununDili = Dil.Ingilizce;
+        // oyunverisi.veriKaydet.oyununDili = Dil.Ingilizce;
+
+        SaveLoadManager.instance.DeleteProfileData("test"); //elle yazilmamasi daha iyi olur
+        SaveLoadManager.instance.gameData = new SaveData(); // yeni kayit verisine geciyor
+
         SceneManager.LoadScene("AnaEkran");     //SceneManager.LoadScene("ModSecimEkrani");
     }
 

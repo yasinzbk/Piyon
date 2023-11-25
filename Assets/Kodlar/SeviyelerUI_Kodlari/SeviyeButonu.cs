@@ -18,11 +18,8 @@ public class SeviyeButonu : MonoBehaviour
     public int alemNo =0;
     public GameObject onayPaneli;
 
-    private OyunVerisi oyunverisi;
-
     private void Start()
     {
-        oyunverisi = FindObjectOfType<OyunVerisi>();
         butonImage = GetComponent<Image>();
         buButon = GetComponent<Button>();
         VeriyiYukle();
@@ -33,9 +30,9 @@ public class SeviyeButonu : MonoBehaviour
 
     void VeriyiYukle()
     {
-        if (oyunverisi != null)
-        {
-            if(oyunverisi.veriKaydet.aktifMi[alemNo, seviye - 1])
+        //if (oyunverisi != null)
+        //{
+            if(SaveLoadManager.instance.gameData.aktifMi[alemNo, seviye - 1])
             {
                 aktifMi = true;
             }
@@ -43,7 +40,7 @@ public class SeviyeButonu : MonoBehaviour
             {
                 aktifMi = false;
             }
-        }
+        //}
     }
 
     //void YildizlariAktifEt()

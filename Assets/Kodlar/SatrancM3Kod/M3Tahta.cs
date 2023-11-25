@@ -24,7 +24,7 @@ public class Fayans
     public FayansTur fayTur;
 }
 
-public class M3Tahta : MonoBehaviour
+public class M3Tahta : MonoBehaviour,ISaveData
 {
     [Header("Scriptable Obje Seyleri")]
     public AlemSM3 alem;
@@ -74,7 +74,7 @@ public class M3Tahta : MonoBehaviour
     private OyunSonuYoneticisiSM3 oyunSonuYoneticisi;
     public float dolmaSuresi = 0.2f;
     public bool turEslesmesiOlacakMi = true;
-    private OyunVerisi oyunVerisi;
+    //private OyunVerisi oyunVerisi;
     private OnayPaneli onayPaneli;
     public GameObject hedefAlani;
     public bool hedeflerdeOlanEslesmeMi = false;
@@ -87,34 +87,35 @@ public class M3Tahta : MonoBehaviour
 
     private void Awake()
     {
-        if (PlayerPrefs.HasKey("seviyeKayitAdi"))
-        {
-            seviye = PlayerPrefs.GetInt(PlayerPrefs.GetString("seviyeKayitAdi"));
-        }
-        if (alem != null)
-        {
-            if (seviye < alem.seviyeler.Length)
-            {
-                if (alem.seviyeler[seviye] != null)
-                {
-                    en = alem.seviyeler[seviye].en;
-                    boy = alem.seviyeler[seviye].boy;
-                    taslar = alem.seviyeler[seviye].taslar;
-                    tahtaYerlesim = alem.seviyeler[seviye].fayansYerlesim;
-                    turEslesmesiOlacakMi = alem.seviyeler[seviye].turEslesmesiOlacakMi;
-                    //skorHedefleri = alem.seviyeler[seviye].skorHedefleri;
-                }
-            }
-        }
+        //if (PlayerPrefs.HasKey("seviyeKayitAdi"))
+        //{
+        //    seviye = PlayerPrefs.GetInt(PlayerPrefs.GetString("seviyeKayitAdi"));
+        //}
 
-        if (PlayerPrefs.HasKey("alemNo"))
-        {
-            alemNo = PlayerPrefs.GetInt("alemNo");
-        }
-        else
-        {
-            Debug.Log("Kayit yok");
-        }
+        //if (alem != null)
+        //{
+        //    if (seviye < alem.seviyeler.Length)
+        //    {
+        //        if (alem.seviyeler[seviye] != null)
+        //        {
+        //            en = alem.seviyeler[seviye].en;
+        //            boy = alem.seviyeler[seviye].boy;
+        //            taslar = alem.seviyeler[seviye].taslar;
+        //            tahtaYerlesim = alem.seviyeler[seviye].fayansYerlesim;
+        //            turEslesmesiOlacakMi = alem.seviyeler[seviye].turEslesmesiOlacakMi;
+        //            //skorHedefleri = alem.seviyeler[seviye].skorHedefleri;
+        //        }
+        //    }
+        //}
+
+        //if (PlayerPrefs.HasKey("alemNo"))
+        //{
+        //    alemNo = PlayerPrefs.GetInt("alemNo");
+        //}
+        //else
+        //{
+        //    Debug.Log("Kayit yok");
+        //}
     }
 
     // Start is called before the first frame update
@@ -123,7 +124,7 @@ public class M3Tahta : MonoBehaviour
         oyunSonuYoneticisi = FindObjectOfType<OyunSonuYoneticisiSM3>();
         hedefYoneticisi = FindObjectOfType<HedefYoneticisiSM3>();
         skorYoneticisi = FindObjectOfType<SkorYoneticisi>();
-        oyunVerisi = FindObjectOfType<OyunVerisi>();
+        //oyunVerisi = FindObjectOfType<OyunVerisi>();
         onayPaneli = FindObjectOfType<OnayPaneli>();
         kamera = FindObjectOfType<Camera>();
         sesYoneticisi = FindObjectOfType<SesYoneticisi>();
@@ -1375,7 +1376,7 @@ public class M3Tahta : MonoBehaviour
             //{
             //    onayPaneli.yuklencekSeviye = "ModSecimEkrani";
             //}
-            onayPaneli.seviye = seviye + 2;
+            onayPaneli.seviye = seviye + 2; // 2 yapmamizin sebebi yazi ile uyumlu olsun diye tahta'daki list icin tahta'da seviyeyi -1 dusuruyoruz
             onayPaneli.alemNo = alemNo;
         }
     }
@@ -1830,4 +1831,29 @@ public class M3Tahta : MonoBehaviour
         StartCoroutine(TahtayiKaristir());
     }
 
+    public void LoadData(SaveData data)
+    {
+        seviye = data.suankiSeviye - 1;
+
+        if (alem != null)
+        {
+            if (seviye < alem.seviyeler.Length)
+            {
+                if (alem.seviyeler[seviye] != null)
+                {
+                    en = alem.seviyeler[seviye].en;
+                    boy = alem.seviyeler[seviye].boy;
+                    taslar = alem.seviyeler[seviye].taslar;
+                    tahtaYerlesim = alem.seviyeler[seviye].fayansYerlesim;
+                    turEslesmesiOlacakMi = alem.seviyeler[seviye].turEslesmesiOlacakMi;
+                    //skorHedefleri = alem.seviyeler[seviye].skorHedefleri;
+                }
+            }
+        }
+    }
+
+    public void SaveData(SaveData data)
+    {
+        
+    }
 }

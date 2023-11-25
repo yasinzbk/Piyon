@@ -89,6 +89,12 @@ public class OyunSonuYoneticisiSM3 : MonoBehaviour
         sayac.text = "" + suankiSayacDegeri;
         PanelAnimKontrol girisPanel = FindObjectOfType<PanelAnimKontrol>();
         girisPanel.OyunBitti();
+
+        SeviyeSecimSahnesineDon seviyeSecim = gameObject.GetComponent<SeviyeSecimSahnesineDon>();
+        seviyeSecim.VeriGuncelle();
+
+        OnayPaneli onayPaneli = FindObjectOfType<OnayPaneli>();
+        onayPaneli.SeviyeKaydet();
     }
 
     public void OyunuKaybet()

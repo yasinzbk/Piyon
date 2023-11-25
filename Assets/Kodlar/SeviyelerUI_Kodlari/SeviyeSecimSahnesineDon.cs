@@ -3,25 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SeviyeSecimSahnesineDon : MonoBehaviour
+public class SeviyeSecimSahnesineDon : MonoBehaviour // bu class gereksiz silebilirim
 {
-    private OyunVerisi oyunVerisi;
     private M3Tahta m3Tahta;
     private OnayPaneli onayPaneli;
 
     public void Tamam(string yuklenecekSeviye)
     {
-        if(yuklenecekSeviye != SceneManager.GetActiveScene().name)  // Oyunu Kazandiği anlamına geliyor. Ayni sahneyi Tekrar butonu yukluyor
-        {
-            VeriGuncelle();
-        }
+        //if (yuklenecekSeviye != SceneManager.GetActiveScene().name)  // Oyunu Kazandiği anlamına geliyor. Ayni sahneyi Tekrar butonu yukluyor
+        //{
+        //    VeriGuncelle();
+        //}  // buna gerek kalmadi
 
         SceneManager.LoadScene(yuklenecekSeviye);
     }
 
     public void VeriGuncelle()
     {
-        if (oyunVerisi != null)
+        if (SaveLoadManager.instance != null)
         {
             //if (m3Tahta.seviye + 2 >= oyunVerisi.veriKaydet.aktifMi.GetLength(1))  // array'in 2 katmanından 2.sinin sayısına bakıyor, bu da o alemdeki bolum sayisini veriyor 
             //{
@@ -42,21 +41,21 @@ public class SeviyeSecimSahnesineDon : MonoBehaviour
             //}
 
 
-            if(m3Tahta.seviye + 1 >= m3Tahta.alem.seviyeler.Length)
+            if(m3Tahta.seviye + 2 >= m3Tahta.alem.seviyeler.Length)
             {
-                oyunVerisi.veriKaydet.aktifMi[1, 88] = true;   // Kullanılmayan 2. alemden rasgele bir bolum olan 88. bolumu aktif ettim (0, 1. alem oluyor) 
+              //  SaveLoadManager.instance.gameData.aktifMi[1, 88] = true;   // Kullanılmayan 2. alemden rasgele bir bolum olan 88. bolumu aktif ettim (0, 1. alem oluyor) 
                 onayPaneli.yuklencekSeviye = "AnaEkran";
             }
             else
             {
-                oyunVerisi.veriKaydet.aktifMi[m3Tahta.alemNo, m3Tahta.seviye + 1] = true;
+                //SaveLoadManager.instance.gameData.aktifMi[m3Tahta.alemNo, m3Tahta.seviye + 1] = true;
+                SaveLoadManager.instance.gameData.suankiSeviye = m3Tahta.seviye + 2;
             }
         }
     }
 
     private void Start()
     {
-        oyunVerisi = FindObjectOfType<OyunVerisi>();
         m3Tahta = FindObjectOfType<M3Tahta>();
         onayPaneli = m3Tahta.GetComponent<OnayPaneli>();
     }

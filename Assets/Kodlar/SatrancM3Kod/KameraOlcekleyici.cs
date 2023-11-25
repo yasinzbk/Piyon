@@ -12,7 +12,7 @@ public class KameraOlcekleyici : MonoBehaviour
     public GameObject arkaPlan;
     private float kameraBaslangicBoyutu;
 
-    void Awake()
+    void Start()
     {
         Debug.Log(Screen.width + " uzunlugu da : " + Screen.height);
         enBoyOrani =(float)Screen.width /Screen.height;

@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class OyunBitti : MonoBehaviour
+public class OyunBitti : MonoBehaviour  // gereksiz bi class oyunu guncellenince duzeltilmeli
 {
-    private OyunVerisi oyunVerisi;
-    public int sonAlemNo;
+
+    public int sonBolum;
 
     public GameObject oyunSonuPaneli;
 
@@ -15,22 +15,29 @@ public class OyunBitti : MonoBehaviour
     private void Start()
     {
 
-        PlayerPrefs.SetInt("SonDunyaSayisi", sonAlemNo);
-        oyunVerisi = FindObjectOfType<OyunVerisi>();
+        //PlayerPrefs.SetInt("SonDunyaSayisi", sonAlemNo);
+
     }
 
     void Update()
     {
-        //if (oyunVerisi.veriKaydet.aktifMi[0, oyunVerisi.veriKaydet.aktifMi.GetLength(1) - 1])
+
+        //if (SaveLoadManager.instance.gameData.aktifMi[1, 88])
         //{
         //    oyunSonuPaneli.SetActive(true);
         //}
+    }
 
-        if (oyunVerisi.veriKaydet.aktifMi[1, 88])
+
+    public bool OyunBittiKontrol(int seviye)
+    {
+
+        if (seviye>=sonBolum)
         {
             oyunSonuPaneli.SetActive(true);
+            return true;
         }
 
-
+        return false;
     }
 }

@@ -35,7 +35,7 @@ public class OyunVerisi : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-        Yukle();
+        //Yukle();
     }
 
     private void Start()
@@ -50,51 +50,51 @@ public class OyunVerisi : MonoBehaviour
         //}
     }
 
-    public void Kaydet()
-    {
-        BinaryFormatter bicimlendirici = new BinaryFormatter();
-        FileStream dosya = File.Open(Application.persistentDataPath + "/oyuncu6.dat",FileMode.Create);
-        _ = new VeriKaydet();
-        VeriKaydet veri = veriKaydet;
-        bicimlendirici.Serialize(dosya, veri);
-        dosya.Close();
-        Debug.Log("kaydedildi");
-    }
+    //public void Kaydet()
+    //{
+    //    BinaryFormatter bicimlendirici = new BinaryFormatter();
+    //    FileStream dosya = File.Open(Application.persistentDataPath + "/oyuncu6.dat",FileMode.Create);
+    //    _ = new VeriKaydet();
+    //    VeriKaydet veri = veriKaydet;
+    //    bicimlendirici.Serialize(dosya, veri);
+    //    dosya.Close();
+    //    Debug.Log("kaydedildi");
+    //}
 
-    public void Yukle()
-    {
-        if(File.Exists(Application.persistentDataPath + "/oyuncu6.dat"))
-        {
-            BinaryFormatter bicimlendirici = new BinaryFormatter();
-            FileStream dosya = File.Open(Application.persistentDataPath + "/oyuncu6.dat", FileMode.Open);
-            veriKaydet = bicimlendirici.Deserialize(dosya) as VeriKaydet;
-            dosya.Close();
-            Debug.Log("Yuklendi");
-        }
-        else
-        {
-            veriKaydet = new VeriKaydet();
-            //veriKaydet.aktifMi = new bool[100,10];
-            veriKaydet.aktifMi = new bool[2,100];
+    //public void Yukle()
+    //{
+    //    if(File.Exists(Application.persistentDataPath + "/oyuncu6.dat"))
+    //    {
+    //        BinaryFormatter bicimlendirici = new BinaryFormatter();
+    //        FileStream dosya = File.Open(Application.persistentDataPath + "/oyuncu6.dat", FileMode.Open);
+    //        veriKaydet = bicimlendirici.Deserialize(dosya) as VeriKaydet;
+    //        dosya.Close();
+    //        Debug.Log("Yuklendi");
+    //    }
+    //    else
+    //    {
+    //        veriKaydet = new VeriKaydet();
+    //        //veriKaydet.aktifMi = new bool[100,10];
+    //        veriKaydet.aktifMi = new bool[2,100];
 
-            for (int i = 0; i < veriKaydet.aktifMi.GetLength(0); i++)
-            {
-                veriKaydet.aktifMi[i, 0] = true;
-            }
+    //        for (int i = 0; i < veriKaydet.aktifMi.GetLength(0); i++)
+    //        {
+    //            veriKaydet.aktifMi[i, 0] = true;
+    //        }
 
-            veriKaydet.oyununDili = Dil.Ingilizce;
-            //veriKaydet.aktifMi[0, 0] = false;
-        }
+    //        veriKaydet.oyununDili = Dil.Ingilizce;
+    //        //veriKaydet.aktifMi[0, 0] = false;
+    //    }
 
-    }
+    //}
 
-    private void OnDisable()
-    {
-        Kaydet();
-    }
+    //private void OnDisable()
+    //{
+    //    Kaydet();
+    //}
 
-    private void OnApplicationPause()
-    {
-        Kaydet();
-    }
+    //private void OnApplicationPause()
+    //{
+    //    Kaydet();
+    //}
 }

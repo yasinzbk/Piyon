@@ -2,20 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DilKontrol : MonoBehaviour
+public class DilKontrol : MonoBehaviour,ISaveData
 {
 
-    private OyunVerisi oyunVerisi;
+    //private OyunVerisi oyunVerisi;
     public DilDegistir dilDegistir;
 
     
-    public Dil sahneDili = Dil.Turkce;
+    public Dil sahneDili { get; private set; }
 
     private void Start()
     {
-        oyunVerisi = FindObjectOfType<OyunVerisi>();
+        //oyunVerisi = FindObjectOfType<OyunVerisi>();
         dilDegistir = FindObjectOfType<DilDegistir>();
 
+        
 
         Invoke("DilDegisim", 0.1f);
         
@@ -25,16 +26,30 @@ public class DilKontrol : MonoBehaviour
 
     void DilDegisim()
     {
-        if (dilDegistir != null && oyunVerisi != null)
+        if (dilDegistir != null)
         {
-            if (sahneDili != oyunVerisi.veriKaydet.oyununDili)
-            {
+            //if (sahneDili != oyunVerisi.veriKaydet.oyununDili)
+            //{
                 Debug.Log("dilDegisim");
-                dilDegistir.Cevir((int)oyunVerisi.veriKaydet.oyununDili);
-            }
+                //dilDegistir.Cevir((int)oyunVerisi.veriKaydet.oyununDili);
+                dilDegistir.Cevir((int)sahneDili);
+            //}
 
         }
     }
 
+    public void DilAyarla(Dil dil)
+    {
+        sahneDili = dil;
+    }
 
+    public void LoadData(SaveData data)
+    {
+        sahneDili = data.oyununDili;
+    }
+
+    public void SaveData(SaveData data)
+    {
+        data.oyununDili = sahneDili;
+    }
 }
