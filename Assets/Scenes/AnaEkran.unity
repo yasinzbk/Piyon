@@ -133,7 +133,6 @@ GameObject:
   m_Component:
   - component: {fileID: 54826543}
   - component: {fileID: 54826542}
-  - component: {fileID: 54826544}
   m_Layer: 0
   m_Name: Ses Yoneticisi
   m_TagString: Untagged
@@ -197,20 +196,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &54826544
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 54826541}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 533faa1a4bc82c0448966af9b1682a4a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &68008132
 GameObject:
   m_ObjectHideFlags: 0
@@ -1023,7 +1010,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &447428961
 MonoBehaviour:
@@ -1041,7 +1028,8 @@ MonoBehaviour:
   seviye: 16
   alemNo: 0
   onayPaneli: {fileID: 1955397312}
-  oyunBittiKontrol: {fileID: 691081473}
+  oyunSonuPaneli: {fileID: 68008132}
+  sonBolum: 22
 --- !u!1 &479788827
 GameObject:
   m_ObjectHideFlags: 0
@@ -1188,7 +1176,6 @@ GameObject:
   - component: {fileID: 691081471}
   - component: {fileID: 691081470}
   - component: {fileID: 691081469}
-  - component: {fileID: 691081473}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1280,20 +1267,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &691081473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 691081468}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bfce7eb75b07bc468a44b7b7cb2062c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sonBolum: 22
-  oyunSonuPaneli: {fileID: 68008132}
 --- !u!1 &777825870
 GameObject:
   m_ObjectHideFlags: 0
@@ -2031,6 +2004,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dilDegistir: {fileID: 0}
   seviyeAyarla: {fileID: 0}
+  ayarlar: {fileID: 1851392049}
 --- !u!1 &1556768768
 GameObject:
   m_ObjectHideFlags: 0
@@ -2164,7 +2138,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1610398040
 MonoBehaviour:
@@ -2405,140 +2379,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1685647532}
   m_CullTransparentMesh: 1
---- !u!1 &1739004258
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1739004260}
-  - component: {fileID: 1739004261}
-  m_Layer: 0
-  m_Name: OyunKaydet
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1739004260
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1739004258}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -39.40327, y: 495.05328, z: -43.449875}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1739004261
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1739004258}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d488c0397e8ded47b43dccad728bbc8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SahnelerdekiTextMeshler: []
-  Ceviriler:
-  - Turkcesi: onayla
-    Ingilizcesi: accept
-  - Turkcesi: "\u0130ptal"
-    Ingilizcesi: cancel
-  - Turkcesi: hedefler
-    Ingilizcesi: goals
-  - Turkcesi: kazandin
-    Ingilizcesi: you win
-  - Turkcesi: kapat
-    Ingilizcesi: close
-  - Turkcesi: tamam
-    Ingilizcesi: okay
-  - Turkcesi: "ba\u015Fla"
-    Ingilizcesi: start
-  - Turkcesi: seviye
-    Ingilizcesi: level
-  - Turkcesi: devam
-    Ingilizcesi: continue
-  - Turkcesi: onay
-    Ingilizcesi: accept
-  - Turkcesi: hamle
-    Ingilizcesi: move
-  - Turkcesi: sure
-    Ingilizcesi: time
-  - Turkcesi: "s\xFCreli b\xF6l\xFCm"
-    Ingilizcesi: time level
-  - Turkcesi: "tekrar \ndeneyin!"
-    Ingilizcesi: "try \nagain!"
-  - Turkcesi: sonraki
-    Ingilizcesi: next
-  - Turkcesi: kazandiniz!
-    Ingilizcesi: you win!
-  - Turkcesi: "ana ekrana d\xF6nmek istiyor musun ?"
-    Ingilizcesi: do you want to return to the main screen?
-  - Turkcesi: evet
-    Ingilizcesi: yes
-  - Turkcesi: "hay\u0131r"
-    Ingilizcesi: no
-  - Turkcesi: "Ger\xE7ekten verileri silmek istiyor musun ? Oyuna en ba\u015Ftan
-      ba\u015Flayacaks\u0131n."
-    Ingilizcesi: Do you really want to delete data ? You will start the game from
-      the beginning.
-  - Turkcesi: "Piyonlar\u0131 biti\u015Fi\u011Findeki karelere hareket ettirerek
-      e\u015Fle\u015Ftirme yap"
-    Ingilizcesi: Match pieces by moving pawns to adjacent squares
-  - Turkcesi: "Buzlar\u0131 k\u0131rmak i\xE7in biti\u015Fi\u011Findeki ta\u015Flar\u0131
-      e\u015Fle\u015Ftir.\n"
-    Ingilizcesi: Match adjacent tiles to break the ices.
-  - Turkcesi: "Kral 4 k\xF6\u015Feye ve 4 kenara hareket edebilir."
-    Ingilizcesi: you can move king  to 4 corners and 4 sides.
-  - Turkcesi: "Kilitli ta\u015Flar se\xE7ilemez."
-    Ingilizcesi: Locked stones cannot be selected.
-  - Turkcesi: "Kale yatay ve dikey kareler boyunca \nhareket edebilir."
-    Ingilizcesi: you can move rook along horizontal and vertical squares.
-  - Turkcesi: "Fil \xE7apraz kareler boyunca hareket edebilir."
-    Ingilizcesi: you can move bishop along the diagonal squares.
-  - Turkcesi: "Vezir yatay, dikey ve \xE7apraz yollar boyunca hareket edebilir.\n"
-    Ingilizcesi: you can move Queen along horizontal, vertical and diagonal paths.
-  - Turkcesi: "At L \u015Feklinde hareket eder."
-    Ingilizcesi: you can move knight in an L shape.
-  - Turkcesi: "At engellerin \xFCzerinden atlayabilir."
-    Ingilizcesi: Knight can jump over obstacles.
-  - Turkcesi: "Art\u0131k t\xFCm ta\u015F t\xFCrleri aktif. \nDikkat et! \nArt\u0131k
-      ta\u015Flar\u0131 t\xFCrlerine g\xF6re de e\u015Fleyebilirsin."
-    Ingilizcesi: 'All gem types are now active.
-
-      Be careful!
-
-      You can
-      now also match pieces by type.'
-  - Turkcesi: "Sarma\u015F\u0131klar her turda \xE7o\u011Fal\u0131r. Onlar\u0131
-      yok et!"
-    Ingilizcesi: bushes multiply with each turn. Destroy them!
-  - Turkcesi: "Lanetli ta\u015Flar se\xE7ilemezler, Onlar\u0131n yerini ba\u015Fka
-      ta\u015Flar ile de\u011Fi\u015Ftirebilirsin."
-    Ingilizcesi: you can't select the cursed stones, you can replace them with other
-      pieces.
-  - Turkcesi: oyun verilerini sil
-    Ingilizcesi: delete saved game data
-  - Turkcesi: 'oyunu bittirdin
-
-      tebrikler!'
-    Ingilizcesi: 'you finished the game
-
-      congratulations!'
-  - Turkcesi: seviyeyi tekrar denemek istiyor musun ?
-    Ingilizcesi: Do you want to try the level again?
-  dilKontrol: {fileID: 0}
 --- !u!1 &1752704677
 GameObject:
   m_ObjectHideFlags: 0
@@ -2686,7 +2526,6 @@ GameObject:
   - component: {fileID: 1851392047}
   - component: {fileID: 1851392046}
   - component: {fileID: 1851392049}
-  - component: {fileID: 1851392050}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -2759,8 +2598,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1851392050}
-        m_TargetAssemblyTypeName: AyarlarButon, Assembly-CSharp
+      - m_Target: {fileID: 1308767106}
+        m_TargetAssemblyTypeName: AyarlarYoneticisi, Assembly-CSharp
         m_MethodName: AyarlariAcKapat
         m_Mode: 1
         m_Arguments:
@@ -2829,19 +2668,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1851392050
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1851392044}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6770aaea0bf7db418fcc8b31a8ed44b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ayarlar: {fileID: 1851392049}
 --- !u!1 &1884460048
 GameObject:
   m_ObjectHideFlags: 0

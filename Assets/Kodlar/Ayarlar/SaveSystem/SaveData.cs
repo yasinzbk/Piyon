@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum Dil { Turkce, Ingilizce }
 
 [System.Serializable]
 public class SaveData  //  Things that will save

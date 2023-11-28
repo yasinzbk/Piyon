@@ -10,18 +10,18 @@ public class SeviyeAyarla : MonoBehaviour, ISaveData
     private DilKontrol dilKontrol;
     public GameObject onayPaneli;
 
-    public OyunBitti oyunBittiKontrol;
+    public GameObject oyunSonuPaneli;
+    public int sonBolum;
 
     private void Start()
     {
         dilKontrol = FindObjectOfType<DilKontrol>();
-        //VeriyiYukle();
         SeviyeyiGoster();
 
-        if (oyunBittiKontrol.OyunBittiKontrol(seviye))
+        if (OyunBittiKontrol(seviye))
         {
-            seviye = oyunBittiKontrol.sonBolum;  // son bolumun ardina gidilmesin diye yapilmis geicci onlem
-            onayPaneli.GetComponent<OnayPaneli>().seviye = oyunBittiKontrol.sonBolum;
+            seviye = sonBolum;  // son bolumun ardina gidilmesin diye yapilmis geicci onlem
+            onayPaneli.GetComponent<OnayPaneli>().seviye = sonBolum;
 
             if (dilKontrol.sahneDili == Dil.Turkce)
             {
@@ -47,24 +47,6 @@ public class SeviyeAyarla : MonoBehaviour, ISaveData
         }
     }
 
-
-    //void VeriyiYukle(SaveData data)
-    //{
-    //    int i = 0;
-    //    if (data != null)
-    //    {
-
-    //        while (data.aktifMi[alemNo, i])
-    //        {
-    //            i++;
-    //        }
-
-    //        seviye = i;
-    //    }
-
-    //    onayPaneli.GetComponent<OnayPaneli>().seviye = seviye;
-    //}
-
     public void LoadData(SaveData data)
     {
         //VeriyiYukle(data);
@@ -76,5 +58,17 @@ public class SeviyeAyarla : MonoBehaviour, ISaveData
     public void SaveData(SaveData data)
     {
         data.suankiSeviye = seviye;
+    }
+
+    public bool OyunBittiKontrol(int seviye)
+    {
+
+        if (seviye >= sonBolum)
+        {
+            oyunSonuPaneli.SetActive(true);
+            return true;
+        }
+
+        return false;
     }
 }

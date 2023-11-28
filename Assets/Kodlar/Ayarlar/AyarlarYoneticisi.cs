@@ -8,19 +8,33 @@ public class AyarlarYoneticisi : MonoBehaviour
 
     public DilDegistir dilDegistir;
     public SeviyeAyarla seviyeAyarla;
-    private AyarlarButon ayarlarPanel;
+
+    private bool AyarlariAc = false;
+    public Animator ayarlar;
     private void Start()
     {
         dilDegistir = FindObjectOfType<DilDegistir>();
         seviyeAyarla = FindObjectOfType<SeviyeAyarla>();
-        ayarlarPanel = FindObjectOfType<AyarlarButon>();
     }
 
     public void Cevir(int a)
     {
         dilDegistir.Cevir(a);
         seviyeAyarla.SeviyeyiGoster();
-        ayarlarPanel.AyarlariAcKapat();
+        AyarlariAcKapat();
     }
 
+    public void AyarlariAcKapat()
+    {
+        AyarlariAc = !AyarlariAc;
+
+        if (AyarlariAc)
+        {
+            ayarlar.SetBool("AyarlarAc", true);
+        }
+        else
+        {
+            ayarlar.SetBool("AyarlarAc", false);
+        }
+    }
 }
